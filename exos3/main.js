@@ -4,9 +4,13 @@ let totalPrice = document.getElementById("totalPrice")
 let listAllProduct = document.getElementsByClassName("hisProduct")
 listAllProduct = [...listAllProduct]
 
+console.log(listAllProduct)
+
 
 let total = 0
-listAllProduct.forEach((btn) => {
+listAllProduct.forEach((tr) => {
+
+    let btn = tr.lastElementChild.lastElementChild
 
     btn.addEventListener("click", (e) => {
         e.preventDefault()
